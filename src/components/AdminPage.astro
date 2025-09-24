@@ -1,0 +1,105 @@
+---
+
+import Header from "../components/common/Header.astro";
+
+---
+
+
+<div id="container">
+	
+	<Header></Header>
+	<main>
+		<h1> Astro · AuthKit </h1>
+		<h2> Admin </h2>
+	</main>
+	<footer>
+		footer
+	</footer>
+</div>
+
+
+<style lang="scss">
+
+	#container {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	#container > * {
+		padding: 1.0rem 2.9rem;
+		border: 2px dashed red;
+
+	}
+	
+
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: space-between;
+		
+		#logo {
+			border: 1px dashed blue;
+		}
+
+		#menu-large {
+			border: 1px dashed green;
+		}
+
+		#sign-in {
+			border: 1px dashed orange;
+		}
+
+		#menu-small {
+
+			a {
+				text-decoration: none;
+			}
+
+			nav { 
+				position: absolute;
+				top: 0;
+				left: calc(100vw);
+				border: 1px dashed gray;
+			}
+		}
+	}
+
+	main {
+		margin: 1rem 0;
+		flex: 1;
+	}
+
+	@media screen and (max-width: 800px) {
+
+		#menu-large { 
+			display: none;
+		}
+
+		#sign-in {
+			display: none;
+		}
+
+		#menu-small { 
+			display: block;
+		}
+	}
+
+
+	@media screen and (min-width: 800px) {
+
+		#menu-large { 
+			display: block;
+		}
+
+		#sign-in {
+			display: block;
+		}
+
+		#menu-small { 
+			display: none;
+		}
+	}
+
+</style>

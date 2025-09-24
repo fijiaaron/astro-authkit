@@ -1,0 +1,19 @@
+{
+  "name": "astro-authkit",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.13.10",
+    "sass": "^1.93.0",
+    "sass-embedded": "^1.93.0",
+    "scss": "^0.2.4",
+    "typescript": "^5.9.2"
+  }
+}
