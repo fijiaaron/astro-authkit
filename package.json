@@ -15,5 +15,9 @@
     "sass-embedded": "^1.93.0",
     "scss": "^0.2.4",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@workos-inc/node": "^7.70.0",
+    "iron-session": "^8.0.4"
   }
 }
